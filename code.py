@@ -162,3 +162,39 @@
 #     print("C+")
 # else:
 #     print("F")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# calculator 
+
+a = int(input('Input Fast Number '))
+oparater = input('Enter oparater (+ , - , * , /, ** , // , %)')
+b = int(input('Input second Number '))
+
+if oparater == '+':
+    print(a + b)
+elif oparater == '-':
+    print(a -b)
+elif oparater == '*':
+    print(a * b)
+elif oparater == '/':
+    print(a / b)
+elif oparater == '**':
+    print(a ** b)
+elif oparater == '//':
+    print(a // b)
+elif oparater == '%':
+   print(a  % b)
+else:
+    print('Invalid oparater')
