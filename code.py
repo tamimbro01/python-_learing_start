@@ -228,18 +228,60 @@
 
 # 1 to 10 => even
 
-num = int(input("Enter number chack ever and odd"))
-numBr = int(input("set a stop number or brack "))
-for i in range (num):
+# num = int(input("Enter number chack ever and odd"))
+# numBr = int(input("set a stop number or brack "))
+# for i in range (num):
+#     if i == numBr:
+#         break
+#     if i % 2 == 0:
+#         print('Event Numebr' , i)
+#         continue 
+#     else:
+#         print('Odd Numebr' , i)
 
-    if i == numBr:
-        break
-    
 
-    if i % 2 == 0:
-        print('Event Numebr' , i)
-        continue 
 
-  
-    else:
-        print('Odd Numebr' , i)
+# part 5
+
+# List & slicing => metuble 
+
+# marks = [ 12, 32, 43, 65, 67, 88, 87,98 , 64]
+# print(len(marks)) 
+# print(marks[-1])
+# print(marks[0:4]) 
+# print(marks[-4:-1]) 
+# print(marks[-4:]) 
+# for score in marks:
+#     print(score)
+# marks.append(3999)
+# marks.insert(2, 4434)
+# print(marks)
+
+
+
+
+# Tuple => immutible
+
+# marks = (3,4,5,6,67,4,3,33,4)
+# print(marks)
+# print(marks.count(4))
+
+
+
+# Set => unique item collection
+
+# marks = {34, 56,44,444,44,4,44,44,55}
+# print(len(marks))
+# for score in marks:
+#     print(score)
+
+ 
+# Dictionary => key-value => mutible
+
+
+# student = {'name':'Tamim','age':22, 'cgpa': 3.5 , 'math': 20}
+# for key in student:
+#     print(key, student[key]) 
+# student['name'] = "Iqbal"
+# print(student) 
+# print(student['math'])
