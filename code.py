@@ -178,23 +178,68 @@
 
 # calculator 
 
-a = int(input('Input Fast Number '))
-oparater = input('Enter oparater (+ , - , * , /, ** , // , %)')
-b = int(input('Input second Number '))
+# a = int(input('Input Fast Number '))
+# oparater = input('Enter oparater (+ , - , * , /, ** , // , %)')
+# b = int(input('Input second Number '))
+# if oparater == '+':
+#     print(a + b)
+# elif oparater == '-':
+#     print(a -b)
+# elif oparater == '*':
+#     print(a * b)
+# elif oparater == '/':
+#     print(a / b)
+# elif oparater == '**':
+#     print(a ** b)
+# elif oparater == '//':
+#     print(a // b)
+# elif oparater == '%':
+#    print(a  % b)
+# else:
+#     print('Invalid oparater')
 
-if oparater == '+':
-    print(a + b)
-elif oparater == '-':
-    print(a -b)
-elif oparater == '*':
-    print(a * b)
-elif oparater == '/':
-    print(a / b)
-elif oparater == '**':
-    print(a ** b)
-elif oparater == '//':
-    print(a // b)
-elif oparater == '%':
-   print(a  % b)
-else:
-    print('Invalid oparater')
+ 
+
+
+#  part 4
+
+# Range 
+
+# number = range(20)
+# print(number)  
+
+
+# While Loop
+  
+# counter = 1
+# while counter <=10:
+#     print('*' * counter )
+#     counter = counter + 1
+# print("End of Tamim") 
+
+
+
+
+#  For Loop
+
+# for i in range(2): 
+#     print(i)
+
+
+# 1 to 10 => even
+
+num = int(input("Enter number chack ever and odd"))
+numBr = int(input("set a stop number or brack "))
+for i in range (num):
+
+    if i == numBr:
+        break
+    
+
+    if i % 2 == 0:
+        print('Event Numebr' , i)
+        continue 
+
+  
+    else:
+        print('Odd Numebr' , i)
