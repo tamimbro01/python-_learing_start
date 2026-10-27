@@ -285,3 +285,44 @@
 # student['name'] = "Iqbal"
 # print(student) 
 # print(student['math'])
+
+
+
+# Funcation 
+
+
+# a = int(input('Enter a : ')) 
+# b = int(input('Enter b : '))
+# def sum(a , b):                 # funcation defining
+#     print(a + b) 
+# sum( a, b)                      #Funcation Calling
+
+# price = int(input('Enter price of product : ')) 
+# persent = int(input('Enter persent of gst : ')) 
+#             # parameties
+# def cal_gst(price , persent):
+#     new_price = price +( price * persent / 100)
+#     print(new_price) 
+#          # argument   
+# cal_gst(price, persent)
+
+
+
+
+
+
+# Inbuilt Funcation
+
+# print("Hello")
+# print(len([1,2,345,66,77,32233,22233,443334]))
+
+# Module Funcation
+
+# from math import sqrt , log2
+# print(log2(16))             # 4 because 2^4 = 16
+# print(sqrt(16))             # 4 because 4^2 = 16 
+
+# import random
+
+# print(random.random())
+# print(random.randint(100, 200)) 
