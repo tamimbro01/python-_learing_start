@@ -326,3 +326,31 @@
 
 # print(random.random())
 # print(random.randint(100, 200)) 
+
+
+
+
+
+
+
+
+
+
+
+# Guessing Number
+
+# import random
+# def paly_game ( ) :
+#     lucky_num = random.randint(1, 30)
+#     while True:
+#         user_num = int(input("Guess the number 1 to 50 : "))
+#         if user_num == lucky_num:
+#             print("Lucky Number Own !")
+#             break
+#         elif user_num < lucky_num:
+#             print("Guse the Low number ? ")
+#         else:
+#             print("TO high guess ? Try Again")
+#     print("lucky Number is " , lucky_num)
+#     print("YOU WIN !!")
+# paly_game()
