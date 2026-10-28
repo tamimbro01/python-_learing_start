@@ -176,3 +176,107 @@
 # print("\nUpdated products:")
 # show_products()
 # calculate_inventory_value()
+
+
+# Challenge 9
+# Bus Ticket Booking System 🚌
+
+
+# buses = [
+#     {"bus_name": "Green Line", "destination": "Dhaka", "ticket_price": 800, "seats": 5},
+#     {
+#         "bus_name": "Hanif Enterprise",
+#         "destination": "Chittagong",
+#         "ticket_price": 600,
+#         "seats": 3,
+#     },
+#     {"bus_name": "Shyamoli", "destination": "Sylhet", "ticket_price": 700, "seats": 4},
+# ]
+# def show_buses():
+#     for bus in buses:
+#         print(f"Bus Name: {bus['bus_name']}")
+#         print(f"Destination: {bus['destination']}")
+#         print(f"Ticket Price: {bus['ticket_price']}")
+#         print(f"Available Seats: {bus['seats']}")
+#         print("--------------------")
+# def book_ticket(bus_name, quantity):
+#     for bus in buses:
+#         if bus["bus_name"] == bus_name:
+#             if quantity <= 0:
+#                 print("Invalid ticket quantity!")
+#             elif bus["seats"] >= quantity:
+#                 bus["seats"] -= quantity
+#                 print("Ticket Booked Success")
+#                 print(f"Bus Tickets avible {bus['seats']}")
+#             else:
+#                 print(f"Not enough seats!")
+#                 return
+#                 print("Bus not found")
+# def calculate_ticket_cost(bus_name, quantity):
+#     for bus in buses:
+#         if bus["bus_name"] == bus_name:
+#             if quantity <= 0:
+#                 print("Invalid ticket quantity!")
+#             else:
+#                 total_ticket = bus["ticket_price"] * quantity
+#     print("Total Ticket Cost :-", total_ticket)
+#     return
+# print("Bus not found!")
+# print("\nBooking Tickets...")
+# book_ticket("Green Line", 2)
+# print("\nCalculating Ticket Cost...")
+# calculate_ticket_cost("Green Line", 2)
+# print("\nTesting Insufficient Seats...")
+# book_ticket("Green Line", 10)
+# print("\nTesting Unknown Bus...")
+# book_ticket("Unknown Bus", 1)
+
+
+# Challenge 10
+# Car Rental Management System
+
+
+# cars = [
+#     {"name": "Toyota Corolla", "price_per_day": 2500, "available": True},
+#     {"name": "Honda Civic", "price_per_day": 3500, "available": True},
+#     {"name": "Toyota Noah", "price_per_day": 4500, "available": False},
+# ]
+# def show_cars():
+#     for car in cars:
+#         print(f"Name: {car['name']}")
+#         print(f"Price Per Day: {car['price_per_day']}")
+#         print(f"Available: {car['available']}")
+#         print("--------------------")
+# def rent_car(car_name, days):
+#     for car in cars:
+#         if car["name"] == car_name:
+#             if car["available"] == True:
+#                 car["available"] = False
+#                 print("Car Rented Successfully")
+#             else:
+#                 print("Car is not available!")
+#     else:
+#         print("Car not found!")
+# def calculate_rent(car_name, days):
+#     if days < 1:
+#         print("Invalide number of the days")
+#         return
+#         for car in cars:
+#             if car["name"] == car_name:
+#                 if car["available"] == True:
+#                     car["available"] = False
+#                     print("Car Rented Successfull")
+#                     print("Rental Days: ", days)
+#                 else:
+#                     print("Car is not availabel")
+#                 return
+#         print("Car not foun")
+# show_cars()
+# print("\nRenting Car...")
+# rent_car("Toyota Corolla", 1)
+# print("\nCalculating Rent...")
+# calculate_rent("Toyota Corolla", 3)
+# print("\nTrying to Rent Unavailable Car...")
+# rent_car("Toyota Noah", 2)
+# print("\nTrying Unknown Car...")
+# rent_car("BMW", 2)
