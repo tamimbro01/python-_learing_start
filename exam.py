@@ -230,3 +230,53 @@
 # book_ticket("Green Line", 10)
 # print("\nTesting Unknown Bus...")
 # book_ticket("Unknown Bus", 1)
+
+
+# Challenge 10
+# Car Rental Management System
+
+
+# cars = [
+#     {"name": "Toyota Corolla", "price_per_day": 2500, "available": True},
+#     {"name": "Honda Civic", "price_per_day": 3500, "available": True},
+#     {"name": "Toyota Noah", "price_per_day": 4500, "available": False},
+# ]
+# def show_cars():
+#     for car in cars:
+#         print(f"Name: {car['name']}")
+#         print(f"Price Per Day: {car['price_per_day']}")
+#         print(f"Available: {car['available']}")
+#         print("--------------------")
+# def rent_car(car_name, days):
+#     for car in cars:
+#         if car["name"] == car_name:
+#             if car["available"] == True:
+#                 car["available"] = False
+#                 print("Car Rented Successfully")
+#             else:
+#                 print("Car is not available!")
+#     else:
+#         print("Car not found!")
+# def calculate_rent(car_name, days):
+#     if days < 1:
+#         print("Invalide number of the days")
+#         return
+#         for car in cars:
+#             if car["name"] == car_name:
+#                 if car["available"] == True:
+#                     car["available"] = False
+#                     print("Car Rented Successfull")
+#                     print("Rental Days: ", days)
+#                 else:
+#                     print("Car is not availabel")
+#                 return
+#         print("Car not foun")
+# show_cars()
+# print("\nRenting Car...")
+# rent_car("Toyota Corolla", 1)
+# print("\nCalculating Rent...")
+# calculate_rent("Toyota Corolla", 3)
+# print("\nTrying to Rent Unavailable Car...")
+# rent_car("Toyota Noah", 2)
+# print("\nTrying Unknown Car...")
+# rent_car("BMW", 2)
