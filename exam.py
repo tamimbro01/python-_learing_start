@@ -45,16 +45,31 @@
 # Number Guessing Game
 
 
-secret_number = 7
-guess_number = int(input("Enter the guess the number 1 to 10 :- "))
+# secret_number = 7
+# guess_number = int(input("Enter the guess the number 1 to 10 :- "))
+# def check_guess(guess_number, secret_number):
+#         if guess_number == secret_number:
+#             print("Correct Guess!")
+#         elif guess_number < secret_number:
+#             print( "Too Low!")
+#         else:
+#             print("Too High!")
+# check_guess(guess_number, secret_number)
 
-def check_guess(guess_number, secret_number):
-        if guess_number == secret_number:
-            print("Correct Guess!")
-        elif guess_number < secret_number:
-            print( "Too Low!")
 
-        else:
-            print("Too High!")
- 
-check_guess(guess_number, secret_number)
+
+# Question 6
+# Number Guessing Game — Retry Version
+
+# secret_number = 7
+# def check_retry(secret_number):
+#     while True:
+#         guess_user = int(input("Enter a number 1 to 11 :- "))
+#         if guess_user == secret_number:
+#             print('Correct Guess!')
+#             break
+#         elif guess_user < secret_number:
+#             print('Too Low!')
+#         else:
+#             print('Too High!')
+# check_retry(secret_number)
