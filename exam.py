@@ -140,3 +140,39 @@
 # rank_students()
 # add_student("Sakib", 75, 82, 90)
 # show_results()
+
+
+# Challenge 8
+#  Inventory Stock Management
+
+# products = [
+#     {"name": "Keyboard", "price": 1200, "stock": 5},
+#     {"name": "Mouse", "price": 500, "stock": 10},
+#     {"name": "Monitor", "price": 12000, "stock": 3},
+# ]
+# def show_products():
+#     for product in products:
+#         print(f"Name {product['name']}")
+#         print(f"Price {product['price']}")
+#         print(f"Stock {product['stock']}")
+#         print("--------------------")
+# def sell_product(product_name, quantity):
+#     for product in products:
+#         if product["name"] == product_name:
+#             if product["stock"] >= quantity:
+#                 product["stock"] -= quantity
+#                 print("Product Sold Successfully")
+#                 print("Remaining stock:", product["stock"])
+#             else:
+#                 print("Out of Stock")
+#                 return
+# def calculate_inventory_value():
+#     total = 0
+#     for product in products:
+#         total += product['price'] * product['stock']
+#     print(f'Total Inventory Value: {total}')
+# print("\nSelling Mouse...")
+# sell_product("Mouse", 5)
+# print("\nUpdated products:")
+# show_products()
+# calculate_inventory_value()
