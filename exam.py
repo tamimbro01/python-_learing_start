@@ -38,3 +38,23 @@
 #         odd_count += 1
 # print("Total Even numbers:", even_count)
 # print("Total Odd numbers:", odd_count)
+
+
+
+# Question 5
+# Number Guessing Game
+
+
+secret_number = 7
+guess_number = int(input("Enter the guess the number 1 to 10 :- "))
+
+def check_guess(guess_number, secret_number):
+        if guess_number == secret_number:
+            print("Correct Guess!")
+        elif guess_number < secret_number:
+            print( "Too Low!")
+
+        else:
+            print("Too High!")
+ 
+check_guess(guess_number, secret_number)
