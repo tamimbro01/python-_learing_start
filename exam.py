@@ -280,3 +280,83 @@
 # rent_car("Toyota Noah", 2)
 # print("\nTrying Unknown Car...")
 # rent_car("BMW", 2)
+
+
+# Challenge 11
+
+# Restaurant Order Management System
+
+
+menus = [
+    {"name": "Burger", "price": 250, "available": True},
+    {"name": "Pizza", "price": 500, "available": True},
+    {"name": "Fries", "price": 150, "available": False},
+    {"name": "Sandwich", "price": 200, "available": True},
+]
+
+
+def show_menu():
+    for menu in menus:
+        print(f"Name: {menu['name']}")
+        print(f"Price: {menu['price']}")
+        print(f"Available: {menu['available']}")
+        print("---------------------------")
+
+
+def place_order(food_name, quantity):
+    if quantity < 1:
+        print("Minimum order 1")
+        return
+
+    for menu in menus:
+        if menu["name"] == food_name:
+            if menu["available"] == True:
+                print("Order created successfully!")
+            else:
+                print("Food is not available!")
+
+            return
+
+    print("Food is not found!")
+
+
+def calculate_bill(food_name, quantity):
+    if quantity < 1:
+        print("Invalid quantity!")
+        return
+
+    for menu in menus:
+        if menu["name"] == food_name:
+            total_bill = menu["price"] * quantity
+
+            if total_bill >= 1000:
+                discount_amount = total_bill * 10 / 100
+            elif total_bill >= 500:
+                discount_amount = total_bill * 5 / 100
+            else:
+                discount_amount = 0
+
+            final_price = total_bill - discount_amount
+
+            print("Total Bill:", total_bill)
+            print("Discount:", discount_amount)
+            print("Final Price:", final_price)
+
+            return
+
+    print("Food is not found!")
+
+
+show_menu()
+
+print("\nPlacing Order...")
+place_order("Burger", 3)
+
+print("\nCalculating Bill...")
+calculate_bill("Burger", 3)
+
+print("\nOrdering Unavailable Food...")
+place_order("Fries", 2)
+
+print("\nOrdering Unknown Food...")
+place_order("Pasta", 1)
