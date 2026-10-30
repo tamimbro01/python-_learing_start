@@ -341,19 +341,6 @@
 # place_order("Pasta", 1)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Challenge 12
 # ATM Banking System
 
@@ -415,127 +402,103 @@
 #     atm_menu(user_account)
 
 
-
-
-
-
-
 # Challenge 13
 
 # Hospital Appointment Management System
 
 
-
-doctors = [
-    {
-        "name": "Dr. Rahim",
-        "specialty": "Medicine",
-        "fee": 800,
-        "available": True
-    },
-    {
-        "name": "Dr. Karim",
-        "specialty": "Cardiology",
-        "fee": 1200,
-        "available": True
-    },
-    {
-        "name": "Dr. Hasan",
-        "specialty": "Medicine",
-        "fee": 600,
-        "available": False
-    }
-]
-
-appointments = []
-
-
-def show_doctors():
-    for doctor in doctors:
-        if doctor['available'] == True:
-            print(f'Doctor Name: ', doctor['name'] )
-            print(f'specialty: ', doctor['specialty'] )
-            print(f'fee : ', doctor['fee'] )
-            print(f'available: ', doctor['available'] )
-            print('---------------------------')
-
-
-
-def book_appointment():
-    patient_name = input("Enter a Patient Name :- ")
-    doctor_name = input('Enter a  Doctor Name :- ')
-
-    found = False
-
-    for doctor in doctors:
-        if doctor['name'].lower() == doctor_name.lower():
-            found = True
-            if doctor['available'] == False:
-                print('Doctor is not available!')
-            else:
-                appointment ={
-                    "patient_name": patient_name,
-                    "doctor_name": doctor['name'],
-                    "fee": doctor['fee']
-                }
-                appointments.append(appointment)
-                print(f"Appointment booked with {doctor['name']}")   
-                print(f"Patient Name: {patient_name}")
-                print(f"Doctor Fee: {doctor['fee']}")
-
-                break
-    if found == False:
-        print('Doctor not found!')
-
-
-
-
- 
-
-
-
-
-def view_appointments():
-    if len(appointments) == 0:
-        print("No appointments found!")
-    else:
-        for appointment in appointments:
-            print("Patient:", appointment["patient_name"])
-            print("Doctor:", appointment["doctor_name"])
-            print("Fee:", appointment["fee"])
-            print("--------------------")
-view_appointments()
-
-def main_menu():
-    while True:
-        print("\n===== HOSPITAL MENU =====")
-        print("1. Book Appointment")
-        print("2. Show Available Doctors")
-        print("3. View Appointments")
-        print("4. Exit")
+# doctors = [
+#     {
+#         "name": "Dr. Rahim",
+#         "specialty": "Medicine",
+#         "fee": 800,
+#         "available": True
+#     },
+#     {
+#         "name": "Dr. Karim",
+#         "specialty": "Cardiology",
+#         "fee": 1200,
+#         "available": True
+#     },
+#     {
+#         "name": "Dr. Hasan",
+#         "specialty": "Medicine",
+#         "fee": 600,
+#         "available": False
+#     }
+# ]
+# appointments = []
+# def show_doctors():
+#     for doctor in doctors:
+#         if doctor['available'] == True:
+#             print(f'Doctor Name: ', doctor['name'] )
+#             print(f'specialty: ', doctor['specialty'] )
+#             print(f'fee : ', doctor['fee'] )
+#             print(f'available: ', doctor['available'] )
+#             print('---------------------------')
+# def book_appointment():
+#     patient_name = input("Enter a Patient Name :- ")
+#     doctor_name = input('Enter a  Doctor Name :- ')
+#     found = False
+#     for doctor in doctors:
+#         if doctor['name'].lower() == doctor_name.lower():
+#             found = True
+#             if doctor['available'] == False:
+#                 print('Doctor is not available!')
+#             else:
+#                 appointment ={
+#                     "patient_name": patient_name,
+#                     "doctor_name": doctor['name'],
+#                     "fee": doctor['fee']
+#                 }
+#                 appointments.append(appointment)
+#                 print(f"Appointment booked with {doctor['name']}")
+#                 print(f"Patient Name: {patient_name}")
+#                 print(f"Doctor Fee: {doctor['fee']}")
+#                 break
+#     if found == False:
+#         print('Doctor not found!')
+# def view_appointments():
+#     if len(appointments) == 0:
+#         print("No appointments found!")
+#     else:
+#         for appointment in appointments:
+#             print("Patient:", appointment["patient_name"])
+#             print("Doctor:", appointment["doctor_name"])
+#             print("Fee:", appointment["fee"])
+#             print("--------------------")
+# view_appointments()
+# def main_menu():
+#     while True:
+#         print("\n===== HOSPITAL MENU =====")
+#         print("1. Book Appointment")
+#         print("2. Show Available Doctors")
+#         print("3. View Appointments")
+#         print("4. Exit")
+#         choice = input("choice the options")
+#         if choice == "1":
+#             book_appointment()
+#         elif choice == "2":
+#             show_doctors()
+#         elif choice == "3":
+#             view_appointments()
+#         elif choice == "4":
+#             print("Thank you!")
+#             break
+#         else:
+#             print("Invalid option!")
+# main_menu()
+# # user_booking =  book_appointment()
+# # if user_booking is not None:
+# #     main_menu(user_booking)
 
 
-        choice = input("choice the options")
+#  Problem 14 — Student Performance Analyzer
 
-        if choice == "1":
-            book_appointment()
-
-        elif choice == "2":
-            show_doctors()
-
-        elif choice == "3":
-            view_appointments()
-
-        elif choice == "4":
-            print("Thank you!")
-            break
-
-        else:
-            print("Invalid option!")
-
-main_menu()
-
-    
-# user_booking =  book_appointment()
-# if user_booking is not None:
-#     main_menu(user_booking)
+# students = {"Rahim": 85, "Karim": 67, "Hasan": 42, "Nabil": 28}
+# for name, marks in students.items():
+#     if marks >= 33:
+#         result = "Pass"
+#     else:
+#         result = "Faild"
+#     print(f'{name} - {marks} - {result}')
