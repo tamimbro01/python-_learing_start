@@ -287,76 +287,129 @@
 # Restaurant Order Management System
 
 
-menus = [
-    {"name": "Burger", "price": 250, "available": True},
-    {"name": "Pizza", "price": 500, "available": True},
-    {"name": "Fries", "price": 150, "available": False},
-    {"name": "Sandwich", "price": 200, "available": True},
-]
+# menus = [
+#     {"name": "Burger", "price": 250, "available": True},
+#     {"name": "Pizza", "price": 500, "available": True},
+#     {"name": "Fries", "price": 150, "available": False},
+#     {"name": "Sandwich", "price": 200, "available": True},
+# ]
+# def show_menu():
+#     for menu in menus:
+#         print(f"Name: {menu['name']}")
+#         print(f"Price: {menu['price']}")
+#         print(f"Available: {menu['available']}")
+#         print("---------------------------")
+# def place_order(food_name, quantity):
+#     if quantity < 1:
+#         print("Minimum order 1")
+#         return
+#     for menu in menus:
+#         if menu["name"] == food_name:
+#             if menu["available"] == True:
+#                 print("Order created successfully!")
+#             else:
+#                 print("Food is not available!")
+#             return
+#     print("Food is not found!")
+# def calculate_bill(food_name, quantity):
+#     if quantity < 1:
+#         print("Invalid quantity!")
+#         return
+#     for menu in menus:
+#         if menu["name"] == food_name:
+#             total_bill = menu["price"] * quantity
+#             if total_bill >= 1000:
+#                 discount_amount = total_bill * 10 / 100
+#             elif total_bill >= 500:
+#                 discount_amount = total_bill * 5 / 100
+#             else:
+#                 discount_amount = 0
+#             final_price = total_bill - discount_amount
+#             print("Total Bill:", total_bill)
+#             print("Discount:", discount_amount)
+#             print("Final Price:", final_price)
+#             return
+#     print("Food is not found!")
+# show_menu()
+# print("\nPlacing Order...")
+# place_order("Burger", 3)
+# print("\nCalculating Bill...")
+# calculate_bill("Burger", 3)
+# print("\nOrdering Unavailable Food...")
+# place_order("Fries", 2)
+# print("\nOrdering Unknown Food...")
+# place_order("Pasta", 1)
 
 
-def show_menu():
-    for menu in menus:
-        print(f"Name: {menu['name']}")
-        print(f"Price: {menu['price']}")
-        print(f"Available: {menu['available']}")
-        print("---------------------------")
 
 
-def place_order(food_name, quantity):
-    if quantity < 1:
-        print("Minimum order 1")
-        return
-
-    for menu in menus:
-        if menu["name"] == food_name:
-            if menu["available"] == True:
-                print("Order created successfully!")
-            else:
-                print("Food is not available!")
-
-            return
-
-    print("Food is not found!")
 
 
-def calculate_bill(food_name, quantity):
-    if quantity < 1:
-        print("Invalid quantity!")
-        return
-
-    for menu in menus:
-        if menu["name"] == food_name:
-            total_bill = menu["price"] * quantity
-
-            if total_bill >= 1000:
-                discount_amount = total_bill * 10 / 100
-            elif total_bill >= 500:
-                discount_amount = total_bill * 5 / 100
-            else:
-                discount_amount = 0
-
-            final_price = total_bill - discount_amount
-
-            print("Total Bill:", total_bill)
-            print("Discount:", discount_amount)
-            print("Final Price:", final_price)
-
-            return
-
-    print("Food is not found!")
 
 
-show_menu()
 
-print("\nPlacing Order...")
-place_order("Burger", 3)
 
-print("\nCalculating Bill...")
-calculate_bill("Burger", 3)
 
-print("\nOrdering Unavailable Food...")
-place_order("Fries", 2)
 
-print("\nOrdering Unknown Food...")
-place_order("Pasta", 1)
+
+
+
+# Challenge 12
+# ATM Banking System
+
+# accounts = [
+#     {"name": "Tamim", "pin": "1234", "balance": 10000},
+#     {"name": "Rahim", "pin": "5678", "balance": 5000},
+#     {"name": "Karim", "pin": "9012", "balance": 20000},
+# ]
+# def login():
+#     name = input(" Enter Your Account Name: ")
+#     pin = input(" Enter Your PIN : ")
+#     for acount in accounts:
+#         if acount["name"] == name and acount["pin"] == pin:
+#             print("login successful")
+#             return acount
+#     print("Invalid name or PIN!")
+#     return None
+# def check_balance(acount):
+#     print("Current Balance: ", acount["balance"], "BDT")
+# def deposit_money(acount):
+#     amount = int(input("Enter deposit amount :"))
+#     if amount > 0:
+#         acount["balance"] += amount
+#         print("Deposit successful")
+#         print("New Balance: ", acount["balance"], "BDT")
+#     else:
+#         print("Invalid Amount")
+# def withdraw_money(acount):
+#     amount = int(input("Enter withdrawal amount: "))
+#     if amount <= 0:
+#         print("Invalid amount")
+#     elif amount > acount["balance"]:
+#         print("Insufficient balance!")
+#     else:
+#         acount["balance"] -= amount
+#         print("Withdraw successful !")
+#         print("Remaing Balance: ", acount["balance"], "BDT")
+# def atm_menu(acount):
+#     while True:
+#         print("\n===== ATM MENU =====")
+#         print("1. Check Balance")
+#         print("2. Deposit Money")
+#         print("3. Withdraw Money")
+#         print("4. Exit")
+#         choice = input("Select an option : ")
+#         if choice == "1":
+#             check_balance(acount)
+#         elif choice == "2":
+#             deposit_money(acount)
+#         elif choice == "3":
+#             withdraw_money(acount)
+#         elif choice == "4":
+#             print("Thank you for useing our ATM !")
+#             break
+#         else:
+#             print("INvalid Option !")
+# user_account = login()
+# if user_account is not None:
+#     atm_menu(user_account)
