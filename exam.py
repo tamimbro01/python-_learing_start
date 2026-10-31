@@ -502,3 +502,26 @@
 #     else:
 #         result = "Faild"
 #     print(f'{name} - {marks} - {result}')
+
+
+#  Problem 15 — Student Result Analytics
+
+# students = {"Rahim": 85, "Karim": 67, "Hasan": 42, "Nabil": 28, "Sakib": 95, "Rafi": 31}
+# total_Students = 0
+# total_passed = 0
+# total_failed = 0
+# marks_list = []
+# for name, marks in students.items():
+#     total_Students += 1
+#     if marks >= 33:
+#         print(f"{name} - {marks} - Pass")
+#         total_passed += 1
+#     else:
+#         print(f"{name} - {marks} - Fail")       
+#         total_failed += 1
+#         print(f"{name} - {marks} - {marks}")
+#         print('..................')
+#         print(f'Total Stundent :- {total_Students}')
+#         print(f' Total Pass :- {total_passed}')
+#         print(f'Total faild :- {total_failed}')
+ 
